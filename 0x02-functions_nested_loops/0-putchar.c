@@ -6,30 +6,30 @@
 
 int main()
 {
-       _putchar(_);
+       _putchar('_');
        
-       _putchar(p);
+       _putchar('p');
       
        
-       _putchar(u);
+       _putchar('u');
       
 
-       _putchar(t);
+       _putchar('t');
        
        
        
       
-       _putchar(c);
+       _putchar('c');
  
       
        
-       _putchar(a);
+       _putchar('a');
        
-       _putchar(h);
+       _putchar('h');
        
-       -putchar(a);
+       -putchar('a');
        
-       _putchar(r);
+       _putchar('r');
 
 	return (0)
 }
