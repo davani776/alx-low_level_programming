@@ -6,15 +6,30 @@
 
 int main()
 {
-	putchar(_);
-	putchar(p);
-        putchar(p);
-        putchar(p);
-        putchar(p);
-	putchar(p);
-        putchar(p);
-        putchar(p);
-        putchar(p);
+       _putchar(_);
+       
+       _putchar(p);
+      
+       
+       _putchar(u);
+      
+
+       _putchar(t);
+       
+       
+       
+      
+       _putchar(c);
+ 
+      
+       
+       _putchar(a);
+       
+       _putchar(h);
+       
+       -putchar(a);
+       
+       _putchar(r);
 
 	return (0)
 }
