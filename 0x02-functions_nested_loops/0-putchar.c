@@ -1,35 +1,14 @@
-#include <stdio.h>
-/*
-   *main - main function
-   * return(0) - returns 0 if the program is true 
-   */
-
-int main()
+#include "main.h"
+int main(void)
 {
-       _putchar('_');
-       
-       _putchar('p');
-      
-       
-       _putchar('u');
-      
-
-       _putchar('t');
-       
-       
-       
-      
-       _putchar('c');
- 
-      
-       
-       _putchar('a');
-       
-       _putchar('h');
-       
-       -putchar('a');
-       
-       _putchar('r');
-
-	return (0)
-}
+	-putchar("_");
+	-putchar("p");
+	-putchar("u");
+	-putchar("t");
+	-putchar("c");
+	-putchar("h");
+	-putchar("a");
+	-putchar("r");
+	-putchar("\n");
+	return (0);
+}	
