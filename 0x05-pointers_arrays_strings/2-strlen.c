@@ -4,7 +4,7 @@
  * _strlen - function to find lengh of a string
  * @st_r :- initialzie string
  * @s : string to be checked
- * return : return lengh of string
+ * Return : return lengh of string
  */
 int _strlen(char *s)
 {
