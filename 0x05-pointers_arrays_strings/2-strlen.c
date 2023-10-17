@@ -2,19 +2,17 @@
 #include <stdio.h>
 /**
  * _strlen - function to find lengh of a string
- * @string_len :- initialzie string
+ * @st_r :- initialzie string
  * @s : string to be checked
  * return : return lengh of string
  */
 int _strlen(char *s)
 {
-	int string_len = 0;
+	int st_r = 0;
 
-	while (s[string_len])
-	{
-		string_len++;
-	}
-	return (string_len);
+	while (s[st_r])
+		st_r++;
+	return (st_r);
 }
 
 
