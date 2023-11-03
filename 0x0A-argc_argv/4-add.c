@@ -1,60 +1,42 @@
+// A program that adds positive numbers
 #include <stdio.h>
-	#include <stdlib.h>
-	#include <ctype.h>
-	#include <string.h>
-	/**
-	 * check_num - check - string there are digit
-	 * @str: array str
-	 * check_num - number
-	 * Return: Always 0 (Success)
-	 */
-	int check_num(char *str)
+#include <stdlib.h>
 
-	{
-/*Declaring variables*/
-		unsigned int count;
+// A function that converts a character to an integer
+int char_to_int(char c)
+{
+    // Return the ASCII value of the character
+    return (int) c;
+}
 
-		count = 0;
-		while (count < strlen(str)) /*count string*/
-		{
-			if (!isdigit(str[count])) /*check if str there are digit*/
-			{
-				return (0);
-			}
-			count++;
-		}
-		return (1);
-	}
-/**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Argument
- *
- * Return: Always 0 (Success)
- */
 int main(int argc, char *argv[])
 {
-/*Declaring variables*/
-		int count;
-		int str_to_int;
-		int sum = 0;
+    // Initialize the sum to zero
+    int sum = 0;
 
-		count = 1;
-		while (count < argc) /*Goes through the whole array*/
-		{
-			if (check_num(argv[count]))
-			{
-				str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-				sum += str_to_int;
-			}
-			/*Condition if one of the number contains symbols that are not digits*/
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-			count++;
-		}
-		printf("%d\n", sum); /*print sum*/
-		return (0);
-	}
+    // Loop through the arguments
+    for (int i = 1; i < argc; i++)
+    {
+        // Get the first character of the argument
+        char c = argv[i][0];
+        // Convert the character to an integer using char_to_int
+        int n = char_to_int(c);
+        // Check if the number is positive
+        if (n > 0)
+        {
+            // Add the number to the sum
+            sum += n;
+        }
+        else
+        {
+            // Print an error message and return 1
+            printf("Error\n");
+            return 1;
+        }
+    }
+
+    // Print the result, followed by a new line
+    printf("%d\n", sum);
+    return 0;
+}
+
