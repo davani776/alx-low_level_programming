@@ -1,1 +1,1 @@
-# 0x00-hello_world
+Hello world code with C
