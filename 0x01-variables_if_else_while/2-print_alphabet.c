@@ -1,21 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabet.
- *
- * Return: Always 0 (Success)
+ * main - contains the built in function while to print lower case
+ *alphabets
+ * Return: if it is success return 0
  */
+
 int main(void)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char a = 'a';
 
-	for (i = 0; i < 26; i++)
+	while (a <= 'z')
 	{
-		putchar(alp[i]);
+		putchar(a);
+		a++;
 	}
 	putchar('\n');
 	return (0);
 }
-
-

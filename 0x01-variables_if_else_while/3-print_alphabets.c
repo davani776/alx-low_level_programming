@@ -1,20 +1,26 @@
 #include <stdio.h>
-
 /**
- * main - Prints the alphabet.
+ * main - prints alphabet in lower and upper case using while loop
  *
- * Return: Always 0 (Success)
+ * Return: success 0
+ *
  */
+
 int main(void)
 {
-char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int i;
+	char a = 'a';
+	char A = 'A';
 
-	for (i = 0; i < 52; i++)
+	while (a <= 'z')
 	{
-		putchar(alp[i]);
+		putchar(a);
+		a++;
+	}
+	while (A <= 'Z')
+	{
+		putchar(A);
+		A++;
 	}
 	putchar('\n');
 	return (0);
 }
-

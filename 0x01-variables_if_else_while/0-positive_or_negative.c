@@ -1,12 +1,12 @@
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
+
 /**
- * main - Determines if a number is positive, negative or zero.
+ * main - contains an if, elseif and  else statment
  *
- * Return: Always 0 (Success)
+ * Return: 0 success
  */
 int main(void)
 {
@@ -28,4 +28,3 @@ int main(void)
 	}
 	return (0);
 }
-
