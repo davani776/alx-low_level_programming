@@ -4,7 +4,7 @@
  * @dest: memory where is stored
  * @src: memory where to copy from
  * @n: number of byted to copy
- * return: copied memory dest if successful
+ * Return: copied memory dest if successful
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {

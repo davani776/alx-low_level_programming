@@ -2,7 +2,7 @@
 /**
  * _strchr - entry
  * @s: input
- * @C: input
+ * @c: input
  * Return: the address or 0
  *
  */
