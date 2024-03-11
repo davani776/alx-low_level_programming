@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * _atoi - converts a string to an integer
@@ -17,7 +16,6 @@ int _atoi(char *s)
 	digit = 0;
 	while (s[len] != '\0')
 		len++;
-
 	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
@@ -39,24 +37,3 @@ int _atoi(char *s)
 		return (0);
 	return (n);
 }
-/**
- * main - entry point
- * @argc: int argument
- * @argv: store address strings form the command line
- * Return: 0 for success
- */
-int main(int argc, char **argv)
-{
-	int result;
-	int n1, n2;
-
-	if ((argc > 1) && (argc < 4))
-	{
-		n1 = _atoi(argv[1]);
-		n2 = _atoi(argv[2]);
-		result = n1 * n2;
-		printf("%d\n", result);
-	}
-	return (0);
-}
-

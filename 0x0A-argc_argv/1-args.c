@@ -1,24 +1,14 @@
 #include "main.h"
-
 /**
- * main - prints number of arguments
- * @argc: number of program and argument
- * @argv: an array for the string arguments
- * Return: successfully ended
+ * main - prints number of arguments passed in the command line
+ * @argc: number of arguments
+ * @argv: strings of argument
+ * Return: 0 for success
  */
-
 int main(int argc, char **argv)
 {
-	(void) argv;
-	(void) argc;
+	UNUSED(**argv);
 
-	if (argc == 1)
-	{
-		printf("0\n");
-	}
-	else
-	{
-		printf("%d\n", (argc - 1));
-	}
+	printf("%d\n", argc - 1);
 	return (0);
 }

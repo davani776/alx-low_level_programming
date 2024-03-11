@@ -1,17 +1,16 @@
 #include "main.h"
 /**
- * main - printing each argument in a new line
- *@argc: number of arguments
- *@argv: array of argumnets
- *Return: always 0
+ * main - prints commands
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: Always 0 (Success)
  *
  */
-
 int main(int argc, char **argv)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; i < argc; i++)
+	for (; i < argc; i++)
 	{
 		printf("%s\n", argv[i]);
 	}
