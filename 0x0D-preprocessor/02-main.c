@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - prints the file name
- * Return: successfully ended
+ * main - display the file name when it runs
+ * Return: 0 on success
+ *
  */
 int main(void)
 {
