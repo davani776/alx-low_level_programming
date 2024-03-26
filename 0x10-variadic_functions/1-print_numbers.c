@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-
 /**
  * print_numbers - a variadic function that display it's arguments
  * @separator: store the address of an argument to use it after every
@@ -21,11 +20,14 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		int num;
 
 		num = va_arg(print, int);
-		printf("%d", num);
+		_putchar(num + '0');
 		if (i == n - 1)
-			printf("\n");
+			_putchar('\n');
 		else
-			printf("%c ", *separator);
+		{
+			_putchar(*separator);
+			_putchar(' ');
+		}
 	}
 	va_end(print);
 }
