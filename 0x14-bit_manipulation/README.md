@@ -1,0 +1,6 @@
+Bit manupilation - bitwise and(&)
+	 	 - bitwise or(|)
+		 - bitwise xor(^)
+		 - bitwise not(~)
+		 - bitwise left shift(<<)
+		 - bitwise right shift(>>)
